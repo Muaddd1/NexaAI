@@ -1,5 +1,7 @@
 # NexaAI — Premium AI SaaS Template
 
+**[Live demo](https://nexa-ai-silk.vercel.app)** · **[Get it on Gumroad](https://muadme.gumroad.com/l/Nexaai)**
+
 A production-quality, beautifully designed AI SaaS starter kit. Built with Next.js 15, TypeScript, Tailwind CSS v4, and shadcn/ui. Ready to connect to your auth, database, payments, and AI APIs.
 
 **License:** Commercial — [see LICENSE](./LICENSE) for terms.
