@@ -123,6 +123,8 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the landing page.
 
+> Prefer npm? The template ships a `package-lock.json`, so `npm install` and `npm run dev` work the same way.
+
 ### Build for Production
 
 ```bash
