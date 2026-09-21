@@ -2,7 +2,7 @@
 
 **[Live demo](https://nexa-ai-silk.vercel.app)** · **[Get it on Gumroad](https://muadme.gumroad.com/l/Nexaai)**
 
-A production-quality, beautifully designed AI SaaS starter kit. Built with Next.js 15, TypeScript, Tailwind CSS v4, and shadcn/ui. Ready to connect to your auth, database, payments, and AI APIs.
+A production-quality, beautifully designed AI SaaS starter kit. Built with Next.js 16, TypeScript, Tailwind CSS v4, and shadcn/ui. Ready to connect to your auth, database, payments, and AI APIs.
 
 **License:** Commercial — [see LICENSE](./LICENSE) for terms.
 
@@ -83,7 +83,7 @@ A production-quality, beautifully designed AI SaaS starter kit. Built with Next.
 
 | Layer | Technology |
 |-------|-----------|
-| Framework | Next.js 15 (App Router) |
+| Framework | Next.js 16 (App Router) |
 | Language | TypeScript (strict mode) |
 | Styling | Tailwind CSS v4 + CSS variables |
 | UI Components | shadcn/ui (Radix UI primitives) |
@@ -130,6 +130,7 @@ Open [http://localhost:3000](http://localhost:3000) to see the landing page.
 ```bash
 pnpm build
 pnpm start
+pnpm lint     # lint with ESLint
 ```
 
 ---
