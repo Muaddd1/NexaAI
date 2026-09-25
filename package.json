@@ -1,6 +1,8 @@
 {
   "name": "nexaai",
   "version": "0.1.0",
+  "description": "Premium AI SaaS template built with Next.js",
+  "homepage": "https://nexa-ai-silk.vercel.app",
   "private": true,
   "scripts": {
     "dev": "next dev",
