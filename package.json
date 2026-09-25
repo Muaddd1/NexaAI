@@ -1,6 +1,10 @@
 {
   "name": "nexaai",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muaddd1/NexaAI.git"
+  },
   "description": "Premium AI SaaS template built with Next.js",
   "homepage": "https://nexa-ai-silk.vercel.app",
   "private": true,
