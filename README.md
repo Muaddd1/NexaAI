@@ -101,7 +101,7 @@ A production-quality, beautifully designed AI SaaS starter kit. Built with Next.
 
 ### Prerequisites
 
-- **Node.js** 20+ (LTS recommended)
+- **Node.js** 20.9+ (Next.js 16's minimum; LTS recommended)
 - **pnpm** 9+ (or npm / yarn)
 
 ### Installation
