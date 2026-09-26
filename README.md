@@ -113,9 +113,9 @@ cd NexaAI
 # 2. Install dependencies
 pnpm install
 
-# 3. Copy environment variables
+# 3. (Optional) Copy environment variables
+# The UI runs without any. You only need them once you wire up a backend.
 cp .env.example .env.local
-# Then fill in your .env.local (see Environment Variables below)
 
 # 4. Run the development server
 pnpm dev
@@ -221,17 +221,19 @@ NexaAI/
 
 ## Environment Variables
 
+The template itself reads no environment variables: every page runs on mock data, so `pnpm dev` works with an empty `.env.local`. The variables below are what you will need once you connect the backend pieces described in [Backend Integration](#backend-integration).
+
 Copy `.env.example` to `.env.local` and fill in the values:
 
 ```bash
 cp .env.example .env.local
 ```
 
-| Variable | Description | Required |
+| Variable | Description | Needed when |
 |----------|-------------|----------|
-| `DATABASE_URL` | PostgreSQL connection string | Yes |
-| `NEXTAUTH_URL` | App URL (e.g. `http://localhost:3000`) | Yes |
-| `NEXTAUTH_SECRET` | Secret for NextAuth (generate: `openssl rand -base64 32`) | Yes |
+| `DATABASE_URL` | PostgreSQL connection string | You add a database |
+| `NEXTAUTH_URL` | App URL (e.g. `http://localhost:3000`) | You add auth |
+| `NEXTAUTH_SECRET` | Secret for NextAuth (generate: `openssl rand -base64 32`) | You add auth |
 | `STRIPE_SECRET_KEY` | Stripe secret key | For payments |
 | `STRIPE_PUBLISHABLE_KEY` | Stripe publishable key | For payments |
 | `STRIPE_WEBHOOK_SECRET` | Stripe webhook secret | For payments |
