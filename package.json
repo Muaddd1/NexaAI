@@ -6,6 +6,17 @@
     "url": "git+https://github.com/Muaddd1/NexaAI.git"
   },
   "description": "Premium AI SaaS template built with Next.js",
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "radix-ui",
+    "saas",
+    "ai",
+    "template",
+    "dashboard"
+  ],
   "homepage": "https://nexa-ai-silk.vercel.app",
   "private": true,
   "engines": {
