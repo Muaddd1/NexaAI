@@ -62,5 +62,9 @@
     "eslint-config-next": "16.3.4",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "author": "Mouad Sehli (https://muad-portfolio.vercel.app)",
+  "bugs": {
+    "url": "https://github.com/Muaddd1/NexaAI/issues"
   }
 }
