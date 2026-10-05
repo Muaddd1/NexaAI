@@ -642,3 +642,7 @@ For questions about integrating your own backend, consult the Next.js, Prisma, N
 ---
 
 **Built with care. Ready to ship.**
+
+## Author
+
+Built by [Mouad Sehli](https://muad-portfolio.vercel.app), freelance front-end developer (React, TypeScript, Tailwind). More work and contact details are on the [portfolio](https://muad-portfolio.vercel.app).
