@@ -17,6 +17,7 @@
     "template",
     "dashboard"
   ],
+  "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://nexa-ai-silk.vercel.app",
   "private": true,
   "engines": {
