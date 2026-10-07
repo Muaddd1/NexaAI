@@ -90,6 +90,7 @@ A production-quality, beautifully designed AI SaaS starter kit. Built with Next.
 | Animations | Framer Motion |
 | Icons | Lucide React |
 | Themes | next-themes (dark / light / system) |
+| Toasts | Sonner |
 | Database | PostgreSQL + Prisma ORM |
 | Auth | NextAuth.js v5 |
 | Payments | Stripe |
