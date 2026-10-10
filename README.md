@@ -188,6 +188,8 @@ NexaAI/
 │   │   ├── tooltip.tsx
 │   │   ├── tabs.tsx
 │   │   ├── skeleton.tsx
+│   │   ├── select.tsx
+│   │   ├── sheet.tsx            # Slide-over panel (mobile nav)
 │   │   └── sonner.tsx           # Toast notifications
 │   ├── shared/                  # Cross-cutting components
 │   │   ├── theme-provider.tsx
