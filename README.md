@@ -196,7 +196,8 @@ NexaAI/
 │   │   ├── theme-toggle.tsx
 │   │   ├── logo.tsx
 │   │   ├── container.tsx
-│   │   └── section.tsx
+│   │   ├── section.tsx
+│   │   └── index.ts             # Barrel export
 │   ├── landing/                # Landing page sections (14 total)
 │   └── dashboard/              # Dashboard-specific components
 │       ├── sidebar.tsx
