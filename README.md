@@ -207,7 +207,6 @@ NexaAI/
 │   ├── constants.ts             # All static data (nav, features, pricing, etc.)
 │   └── types.ts                 # TypeScript interfaces
 ├── public/
-│   ├── favicon.svg
 │   ├── robots.txt
 │   └── sitemap.xml
 ├── .env.example

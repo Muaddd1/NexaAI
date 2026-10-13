@@ -72,9 +72,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      </head>
       <body
         className={`${inter.variable} ${syne.variable} font-sans antialiased min-h-screen flex flex-col`}
         style={{ fontFamily: "var(--font-sans)" }}
