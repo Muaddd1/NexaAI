@@ -206,9 +206,6 @@ NexaAI/
 │   ├── utils.ts                 # cn() helper, formatters
 │   ├── constants.ts             # All static data (nav, features, pricing, etc.)
 │   └── types.ts                 # TypeScript interfaces
-├── hooks/
-│   ├── use-scroll-position.ts
-│   └── use-media-query.ts
 ├── public/
 │   ├── favicon.svg
 │   ├── robots.txt
@@ -218,7 +215,8 @@ NexaAI/
 ├── package.json
 ├── tsconfig.json
 ├── next.config.ts
-└── tailwind.config.ts
+├── postcss.config.mjs           # Tailwind CSS v4 (no tailwind.config needed)
+└── eslint.config.mjs
 ```
 
 ---
