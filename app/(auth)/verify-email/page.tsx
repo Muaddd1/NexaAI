@@ -28,7 +28,7 @@ export default function VerifyEmailPage() {
           Click the link in the email we sent to verify your account. The link expires in 24 hours.
         </p>
         <p className="text-xs text-[var(--foreground-subtle)]">
-          Didn't receive the email? Check your spam folder or click below to resend.
+          Didn&apos;t receive the email? Check your spam folder or click below to resend.
         </p>
         <Button variant="outline" className="w-full" onClick={handleResend}>
           Resend verification email
