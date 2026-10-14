@@ -25,14 +25,14 @@ export default function ResetPasswordPage() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
     toast.success("Password reset successfully!");
-    setTimeout(() => { router.push("/auth/login"); }, 1000);
+    setTimeout(() => { router.push("/login"); }, 1000);
   };
 
   return (
     <AuthPageClient
       title="Set new password"
       description="Create a new password for your account"
-      linkHref="/auth/login"
+      linkHref="/login"
       linkLabel="Back to sign in"
       linkSubLabel=""
     >

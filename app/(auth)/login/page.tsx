@@ -24,14 +24,14 @@ export default function LoginPage() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
     toast.success("Login successful! Redirecting to dashboard...");
-    setTimeout(() => { router.push("/dashboard/overview"); }, 1000);
+    setTimeout(() => { router.push("/overview"); }, 1000);
   };
 
   return (
     <AuthPageClient
       title="Welcome back"
       description="Sign in to your NexaAI account"
-      linkHref="/auth/register"
+      linkHref="/register"
       linkLabel="Create an account"
       linkSubLabel="Don&apos;t have an account?"
     >
@@ -73,7 +73,7 @@ export default function LoginPage() {
           <div className="space-y-1.5">
             <div className="flex items-center justify-between">
               <Label htmlFor="password">Password</Label>
-              <Link href="/auth/forgot-password" className="text-xs text-[var(--accent)] hover:underline">
+              <Link href="/forgot-password" className="text-xs text-[var(--accent)] hover:underline">
                 Forgot password?
               </Link>
             </div>

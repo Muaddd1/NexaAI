@@ -163,7 +163,7 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
             <Button size="lg" asChild className="group">
-              <a href="/auth/register">
+              <a href="/register">
                 Start Building Free
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </a>

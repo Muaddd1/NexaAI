@@ -24,14 +24,14 @@ export default function RegisterPage() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
     toast.success("Account created! Check your email to verify your account.");
-    setTimeout(() => { router.push("/auth/verify-email"); }, 1500);
+    setTimeout(() => { router.push("/verify-email"); }, 1500);
   };
 
   return (
     <AuthPageClient
       title="Create your account"
       description="Start building with NexaAI for free"
-      linkHref="/auth/login"
+      linkHref="/login"
       linkLabel="Sign in"
       linkSubLabel="Already have an account?"
     >

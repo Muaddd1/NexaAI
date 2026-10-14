@@ -23,7 +23,7 @@ export default function ForgotPasswordPage() {
       <AuthPageClient
         title="Check your email"
         description="We've sent a password reset link to your email"
-        linkHref="/auth/login"
+        linkHref="/login"
         linkLabel="Back to sign in"
         linkSubLabel="Remember your password?"
       >
@@ -48,7 +48,7 @@ export default function ForgotPasswordPage() {
     <AuthPageClient
       title="Reset your password"
       description="Enter your email and we'll send you a reset link"
-      linkHref="/auth/login"
+      linkHref="/login"
       linkLabel="Back to sign in"
       linkSubLabel="Remember your password?"
     >

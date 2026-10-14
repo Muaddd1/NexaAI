@@ -58,7 +58,7 @@ export function Topbar({ onMenuClick }: TopbarProps) {
 
         {/* Notifications */}
         <Button variant="ghost" size="icon" className="relative" asChild>
-          <a href="/dashboard/notifications">
+          <a href="/notifications">
             <Bell className="w-4 h-4" />
             <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-[var(--destructive)]" />
           </a>
@@ -85,17 +85,17 @@ export function Topbar({ onMenuClick }: TopbarProps) {
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild>
-              <a href="/dashboard/settings/profile" className="flex items-center gap-2 cursor-pointer">
+              <a href="/settings/profile" className="flex items-center gap-2 cursor-pointer">
                 <User className="w-4 h-4" /> Profile
               </a>
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
-              <a href="/dashboard/settings/billing" className="flex items-center gap-2 cursor-pointer">
+              <a href="/billing" className="flex items-center gap-2 cursor-pointer">
                 <CreditCard className="w-4 h-4" /> Billing
               </a>
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
-              <a href="/dashboard/settings/profile" className="flex items-center gap-2 cursor-pointer">
+              <a href="/settings/profile" className="flex items-center gap-2 cursor-pointer">
                 <Settings className="w-4 h-4" /> Settings
               </a>
             </DropdownMenuItem>

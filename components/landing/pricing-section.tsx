@@ -134,7 +134,7 @@ export function PricingSection() {
                     className="w-full"
                     asChild
                   >
-                    <a href="/auth/register">
+                    <a href="/register">
                       {plan.price.monthly === 0 ? "Get Started Free" : "Start Free Trial"}
                     </a>
                   </Button>

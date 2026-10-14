@@ -87,7 +87,7 @@ export default function TemplatesPage() {
                     <Eye className="w-3 h-3 mr-1" /> Preview
                   </Button>
                   <Button size="sm" className="flex-1 text-xs" asChild>
-                    <a href="/dashboard/generator">Use Template</a>
+                    <a href="/generator">Use Template</a>
                   </Button>
                 </div>
               </CardContent>
@@ -119,7 +119,7 @@ export default function TemplatesPage() {
           </div>
           <div className="flex gap-2 mt-4">
             <Button className="flex-1" asChild onClick={() => setPreviewId(null)}>
-              <a href="/dashboard/generator">Use This Template</a>
+              <a href="/generator">Use This Template</a>
             </Button>
           </div>
         </DialogContent>

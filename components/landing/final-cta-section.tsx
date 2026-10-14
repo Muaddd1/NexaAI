@@ -58,7 +58,7 @@ export function FinalCTASection() {
             onSubmit={(e) => {
               e.preventDefault();
               if (email) {
-                router.push(`/auth/register?email=${encodeURIComponent(email)}`);
+                router.push(`/register?email=${encodeURIComponent(email)}`);
               }
             }}
           >

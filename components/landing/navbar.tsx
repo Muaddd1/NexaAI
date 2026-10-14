@@ -47,10 +47,10 @@ export function Navbar() {
           <ThemeToggle />
           <div className="hidden sm:flex items-center gap-2 ml-2">
             <Button variant="ghost" size="sm" asChild>
-              <Link href="/auth/login">Login</Link>
+              <Link href="/login">Login</Link>
             </Button>
             <Button size="sm" asChild>
-              <Link href="/auth/register">
+              <Link href="/register">
                 <Zap className="w-3.5 h-3.5" />
                 Get Started
               </Link>
@@ -87,10 +87,10 @@ export function Navbar() {
               </nav>
               <div className="mt-6 flex flex-col gap-2">
                 <Button variant="outline" asChild onClick={() => setIsOpen(false)}>
-                  <Link href="/auth/login">Login</Link>
+                  <Link href="/login">Login</Link>
                 </Button>
                 <Button asChild onClick={() => setIsOpen(false)}>
-                  <Link href="/auth/register">
+                  <Link href="/register">
                     <Zap className="w-3.5 h-3.5" />
                     Get Started
                   </Link>

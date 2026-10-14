@@ -33,7 +33,7 @@ export default function NotFound() {
             </Link>
           </Button>
           <Button asChild>
-            <Link href="/dashboard/overview">
+            <Link href="/overview">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Go to dashboard
             </Link>

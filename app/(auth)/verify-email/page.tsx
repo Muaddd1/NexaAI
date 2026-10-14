@@ -14,7 +14,7 @@ export default function VerifyEmailPage() {
     <AuthPageClient
       title="Verify your email"
       description="We've sent a verification link to your email address"
-      linkHref="/auth/login"
+      linkHref="/login"
       linkLabel="Back to sign in"
       linkSubLabel=""
     >

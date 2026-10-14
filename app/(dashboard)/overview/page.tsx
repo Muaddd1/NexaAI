@@ -25,9 +25,9 @@ const recentActivity = [
 ];
 
 const quickActions = [
-  { icon: Wand2, label: "New Generation", href: "/dashboard/generator", color: "var(--accent)" },
-  { icon: Activity, label: "AI Workspace", href: "/dashboard/ai-workspace", color: "var(--accent-secondary)" },
-  { icon: Clock, label: "View History", href: "/dashboard/history", color: "var(--success)" },
+  { icon: Wand2, label: "New Generation", href: "/generator", color: "var(--accent)" },
+  { icon: Activity, label: "AI Workspace", href: "/ai-workspace", color: "var(--accent-secondary)" },
+  { icon: Clock, label: "View History", href: "/history", color: "var(--success)" },
 ];
 
 export default function OverviewPage() {
@@ -44,7 +44,7 @@ export default function OverviewPage() {
           </p>
         </div>
         <Button asChild>
-          <a href="/dashboard/generator">
+          <a href="/generator">
             <Plus className="w-4 h-4 mr-1.5" />
             New Generation
           </a>
@@ -156,7 +156,7 @@ export default function OverviewPage() {
           <div className="flex items-center justify-between">
             <CardTitle className="text-base">Recent Activity</CardTitle>
             <Button variant="ghost" size="sm" asChild>
-              <a href="/dashboard/history">View all</a>
+              <a href="/history">View all</a>
             </Button>
           </div>
         </CardHeader>

@@ -23,19 +23,19 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
 const navItems = [
-  { icon: LayoutDashboard, label: "Overview", href: "/dashboard/overview" },
-  { icon: MessageSquare, label: "AI Workspace", href: "/dashboard/ai-workspace" },
-  { icon: Wand2, label: "Generator", href: "/dashboard/generator" },
-  { icon: FileText, label: "Templates", href: "/dashboard/templates" },
-  { icon: History, label: "History", href: "/dashboard/history" },
-  { icon: BarChart2, label: "Analytics", href: "/dashboard/analytics" },
-  { icon: Users, label: "Team", href: "/dashboard/team" },
-  { icon: CreditCard, label: "Billing", href: "/dashboard/billing" },
+  { icon: LayoutDashboard, label: "Overview", href: "/overview" },
+  { icon: MessageSquare, label: "AI Workspace", href: "/ai-workspace" },
+  { icon: Wand2, label: "Generator", href: "/generator" },
+  { icon: FileText, label: "Templates", href: "/templates" },
+  { icon: History, label: "History", href: "/history" },
+  { icon: BarChart2, label: "Analytics", href: "/analytics" },
+  { icon: Users, label: "Team", href: "/team" },
+  { icon: CreditCard, label: "Billing", href: "/billing" },
 ];
 
 const secondaryItems = [
-  { icon: Bell, label: "Notifications", href: "/dashboard/notifications", badge: 3 },
-  { icon: Settings, label: "Settings", href: "/dashboard/settings/profile" },
+  { icon: Bell, label: "Notifications", href: "/notifications", badge: 3 },
+  { icon: Settings, label: "Settings", href: "/settings/profile" },
 ];
 
 export function Sidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
