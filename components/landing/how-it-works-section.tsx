@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Plug, Wand2, Rocket } from "lucide-react";
 import { Container, Section } from "@/components/shared";
 import { HOW_IT_WORKS_STEPS } from "@/lib/constants";
-import { cn } from "@/lib/utils";
 
 const iconMap = [Plug, Wand2, Rocket];
 

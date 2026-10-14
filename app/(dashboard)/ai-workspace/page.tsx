@@ -5,9 +5,7 @@ import { Plus, Search, Send, Copy, Check, ThumbsUp, ThumbsDown, Square, Sparkles
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { AI_MODELS } from "@/lib/constants";
 

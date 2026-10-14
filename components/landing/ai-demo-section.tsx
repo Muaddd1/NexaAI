@@ -8,7 +8,6 @@ import {
   Copy,
   RefreshCw,
   Check,
-  ChevronDown,
 } from "lucide-react";
 import { Container, Section } from "@/components/shared";
 import { Button } from "@/components/ui/button";
@@ -16,7 +15,6 @@ import { Textarea } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card } from "@/components/ui/card";
 import { AI_MODELS } from "@/lib/constants";
-import { cn } from "@/lib/utils";
 
 const DEMO_RESPONSE = `Here's a complete landing page copy for **NexaAI**:
 

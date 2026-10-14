@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Wand2, Copy, Download, Check, FileText, Share2, Mail, Search, BarChart2, Video, Layout, ShoppingBag, Megaphone } from "lucide-react";
+import { Wand2, Copy, Download, Check, FileText, Share2, Mail, Search, Video, Layout, ShoppingBag, Megaphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input, Textarea, Label } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";

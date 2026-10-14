@@ -10,7 +10,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
 
 const members = [
   { id: "1", name: "Jane Doe", email: "jane@nexaai.com", role: "owner", status: "active", avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=jane", usage: 2400 },

@@ -4,7 +4,6 @@ import { useState } from "react";
 import { AuthPageClient } from "../auth-page-client";
 import { Button } from "@/components/ui/button";
 import { Input, Label } from "@/components/ui/input";
-import { toast } from "sonner";
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState("");

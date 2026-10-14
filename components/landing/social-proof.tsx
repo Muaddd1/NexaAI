@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Container, Section } from "@/components/shared";
-import { cn } from "@/lib/utils";
 
 const companies = [
   { name: "Vercel", width: 80 },

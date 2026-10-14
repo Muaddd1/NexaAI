@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Plug, Check, ExternalLink } from "lucide-react";
+import { Check, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 
 const integrations = [
   { id: "openai", name: "OpenAI", description: "GPT-4o, GPT-4o Mini, and more", connected: true, color: "#10a37f" },

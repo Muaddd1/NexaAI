@@ -1,13 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Copy, Eye, Trash2, Filter, FileText, Wand2, Mail, Download } from "lucide-react";
+import { Search, Copy, Eye, Trash2, FileText, Wand2, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 
 const historyItems = [
   { id: "1", type: "generation", template: "Blog Post", prompt: "Write a blog post about the future of AI...", result: "The future of AI is transforming every industry...", model: "GPT-4o", date: "2 min ago", status: "success" },

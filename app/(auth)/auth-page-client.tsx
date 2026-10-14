@@ -1,12 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { Link2, Mail, ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input, Label } from "@/components/ui/input";
+import { ArrowLeft } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 
 interface AuthPageClientProps {
   title: string;
