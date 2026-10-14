@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AuthPageClient } from "../auth-page-client";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import Link from "next/link";
 import { toast } from "sonner";
 
 export default function RegisterPage() {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -22,7 +24,7 @@ export default function RegisterPage() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
     toast.success("Account created! Check your email to verify your account.");
-    setTimeout(() => { window.location.href = "/auth/verify-email"; }, 1500);
+    setTimeout(() => { router.push("/auth/verify-email"); }, 1500);
   };
 
   return (

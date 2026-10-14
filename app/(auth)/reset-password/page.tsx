@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AuthPageClient } from "../auth-page-client";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,7 @@ import { Eye, EyeOff } from "lucide-react";
 import { toast } from "sonner";
 
 export default function ResetPasswordPage() {
+  const router = useRouter();
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -23,7 +25,7 @@ export default function ResetPasswordPage() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
     toast.success("Password reset successfully!");
-    setTimeout(() => { window.location.href = "/auth/login"; }, 1000);
+    setTimeout(() => { router.push("/auth/login"); }, 1000);
   };
 
   return (

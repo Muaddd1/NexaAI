@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AuthPageClient } from "../auth-page-client";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import Link from "next/link";
 import { toast } from "sonner";
 
 export default function LoginPage() {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -22,7 +24,7 @@ export default function LoginPage() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
     toast.success("Login successful! Redirecting to dashboard...");
-    setTimeout(() => { window.location.href = "/dashboard/overview"; }, 1000);
+    setTimeout(() => { router.push("/dashboard/overview"); }, 1000);
   };
 
   return (

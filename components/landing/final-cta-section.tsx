@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Container, Section } from "@/components/shared";
@@ -17,6 +18,7 @@ const fadeUp = {
 };
 
 export function FinalCTASection() {
+  const router = useRouter();
   const [email, setEmail] = useState("");
 
   return (
@@ -56,7 +58,7 @@ export function FinalCTASection() {
             onSubmit={(e) => {
               e.preventDefault();
               if (email) {
-                window.location.href = `/auth/register?email=${encodeURIComponent(email)}`;
+                router.push(`/auth/register?email=${encodeURIComponent(email)}`);
               }
             }}
           >
