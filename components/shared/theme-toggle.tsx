@@ -2,14 +2,13 @@
 
 import { useTheme } from "next-themes";
 import { Sun, Moon, Monitor } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { cn } from "@/lib/utils";
 
 export function ThemeToggle({ className }: { className?: string }) {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
+  // false during SSR, true once hydrated, without a setState-in-effect re-render
+  const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);
 
   if (!mounted) {
     return (
