@@ -41,9 +41,6 @@ export default function NotificationsPage() {
     setSettings((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const allEnabled = Object.values(settings).every(Boolean);
-  const noneEnabled = Object.values(settings).every((v) => !v);
-
   return (
     <div className="space-y-6 max-w-2xl">
       <div className="flex items-center justify-between">
