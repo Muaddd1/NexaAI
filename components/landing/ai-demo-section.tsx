@@ -47,7 +47,7 @@ export function AIDemoSection() {
   const [prompt, setPrompt] = useState("");
   const [model, setModel] = useState("gpt-4o");
   const [isGenerating, setIsGenerating] = useState(false);
-  const [response, setResponse] = useState(DEMO_RESPONSE);
+  const response = DEMO_RESPONSE;
   const [copied, setCopied] = useState(false);
   const [showResult, setShowResult] = useState(true);
 
