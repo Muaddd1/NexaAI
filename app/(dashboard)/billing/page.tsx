@@ -9,12 +9,6 @@ import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { cn, formatCurrency } from "@/lib/utils";
 
-const plans = [
-  { id: "free", name: "Free", price: 0, credits: "100", popular: false },
-  { id: "pro", name: "Pro", price: 29, credits: "5,000", popular: true },
-  { id: "business", name: "Business", price: 99, credits: "25,000", popular: false },
-];
-
 const invoices = [
   { id: "INV-2025-001", date: "Dec 1, 2025", amount: 290, status: "Paid" },
   { id: "INV-2025-002", date: "Nov 1, 2025", amount: 290, status: "Paid" },
