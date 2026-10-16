@@ -33,7 +33,6 @@ export default function GeneratorPage() {
   const [length, setLength] = useState("Medium");
   const [language, setLanguage] = useState("English");
   const [topic, setTopic] = useState("");
-  const [customInput, setCustomInput] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
   const [result, setResult] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
@@ -42,12 +41,12 @@ export default function GeneratorPage() {
   const template = TEMPLATES.find((t) => t.id === selectedTemplate);
 
   const handleGenerate = async () => {
-    if (!topic && !customInput) return;
+    if (!topic) return;
     setIsGenerating(true);
     setResult(null);
     await new Promise((r) => setTimeout(r, 2500));
     setResult(
-      `## Generated Content\n\nBased on your input "${topic || customInput}", here's a professionally crafted ${template?.name || "content"} in ${tone} tone, ${length.toLowerCase()} length, in ${language}.\n\n---\n\n**Introduction:**\nStart with a compelling hook that captures attention immediately. Address the pain point your audience experiences and position your solution as the answer.\n\n**Main Content:**\nDevelop your core message with clear, actionable points. Use evidence and social proof to build credibility. Break complex ideas into digestible sections.\n\n**Conclusion:**\nEnd with a strong call-to-action that drives the desired response. Make the next step crystal clear and frictionless.\n\n---\n\n*Generated with NexaAI · ${new Date().toLocaleDateString()}*`
+      `## Generated Content\n\nBased on your input "${topic}", here's a professionally crafted ${template?.name || "content"} in ${tone} tone, ${length.toLowerCase()} length, in ${language}.\n\n---\n\n**Introduction:**\nStart with a compelling hook that captures attention immediately. Address the pain point your audience experiences and position your solution as the answer.\n\n**Main Content:**\nDevelop your core message with clear, actionable points. Use evidence and social proof to build credibility. Break complex ideas into digestible sections.\n\n**Conclusion:**\nEnd with a strong call-to-action that drives the desired response. Make the next step crystal clear and frictionless.\n\n---\n\n*Generated with NexaAI · ${new Date().toLocaleDateString()}*`
     );
     setIsGenerating(false);
   };
@@ -186,7 +185,7 @@ export default function GeneratorPage() {
                     )}
                   </div>
                 ))}
-                <Button className="w-full" onClick={handleGenerate} isLoading={isGenerating} disabled={!topic && !customInput}>
+                <Button className="w-full" onClick={handleGenerate} isLoading={isGenerating} disabled={!topic}>
                   <Wand2 className="w-4 h-4 mr-1.5" />
                   Generate Content
                 </Button>
