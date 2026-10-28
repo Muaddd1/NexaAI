@@ -177,16 +177,16 @@ export default function AIWorkspacePage() {
                 {/* Message actions */}
                 {msg.role === "assistant" && (
                   <div className="flex items-center gap-1 mt-1.5">
-                    <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => { navigator.clipboard.writeText(msg.content); setCopied(true); setTimeout(() => setCopied(false), 2000); }}>
+                    <Button variant="ghost" size="icon" className="h-7 w-7" aria-label={copied ? "Copied" : "Copy response"} onClick={() => { navigator.clipboard.writeText(msg.content); setCopied(true); setTimeout(() => setCopied(false), 2000); }}>
                       {copied ? <Check className="w-3 h-3 text-[var(--success)]" /> : <Copy className="w-3 h-3" />}
                     </Button>
-                    <Button variant="ghost" size="icon" className="h-7 w-7">
+                    <Button variant="ghost" size="icon" className="h-7 w-7" aria-label="Good response">
                       <ThumbsUp className="w-3 h-3" />
                     </Button>
-                    <Button variant="ghost" size="icon" className="h-7 w-7">
+                    <Button variant="ghost" size="icon" className="h-7 w-7" aria-label="Bad response">
                       <ThumbsDown className="w-3 h-3" />
                     </Button>
-                    <Button variant="ghost" size="icon" className="h-7 w-7">
+                    <Button variant="ghost" size="icon" className="h-7 w-7" aria-label="More actions">
                       <MoreHorizontal className="w-3 h-3" />
                     </Button>
                   </div>
@@ -224,11 +224,11 @@ export default function AIWorkspacePage() {
               onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
             />
             {isGenerating ? (
-              <Button size="icon" variant="outline" onClick={() => setIsGenerating(false)}>
+              <Button size="icon" variant="outline" aria-label="Stop generating" onClick={() => setIsGenerating(false)}>
                 <Square className="w-4 h-4" />
               </Button>
             ) : (
-              <Button size="icon" onClick={handleSend} disabled={!input.trim()}>
+              <Button size="icon" aria-label="Send message" onClick={handleSend} disabled={!input.trim()}>
                 <Send className="w-4 h-4" />
               </Button>
             )}
