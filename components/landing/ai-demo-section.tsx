@@ -211,7 +211,7 @@ export function AIDemoSection() {
                     }
                   }}
                 />
-                <Button size="icon" className="shrink-0 h-[48px] w-12" onClick={handleGenerate} disabled={!prompt.trim() || isGenerating}>
+                <Button size="icon" className="shrink-0 h-[48px] w-12" aria-label="Generate" onClick={handleGenerate} disabled={!prompt.trim() || isGenerating}>
                   <Send className="w-4 h-4" />
                 </Button>
               </div>

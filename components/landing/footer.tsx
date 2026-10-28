@@ -48,7 +48,7 @@ export function Footer() {
                   onChange={(e) => setEmail(e.target.value)}
                   className="h-9 text-sm"
                 />
-                <Button type="submit" size="icon" className="h-9 w-9 shrink-0">
+                <Button type="submit" size="icon" className="h-9 w-9 shrink-0" aria-label="Subscribe">
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </form>
