@@ -91,13 +91,13 @@ export default function HistoryPage() {
                   </p>
                 </div>
                 <div className="flex gap-1 shrink-0">
-                  <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <Button variant="ghost" size="icon" className="h-8 w-8" aria-label="Copy result">
                     <Copy className="w-3.5 h-3.5" />
                   </Button>
-                  <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <Button variant="ghost" size="icon" className="h-8 w-8" aria-label="View details">
                     <Eye className="w-3.5 h-3.5" />
                   </Button>
-                  <Button variant="ghost" size="icon" className="h-8 w-8 text-[var(--destructive)]">
+                  <Button variant="ghost" size="icon" className="h-8 w-8 text-[var(--destructive)]" aria-label="Delete from history">
                     <Trash2 className="w-3.5 h-3.5" />
                   </Button>
                 </div>
