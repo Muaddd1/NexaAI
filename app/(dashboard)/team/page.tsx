@@ -96,7 +96,7 @@ export default function TeamPage() {
                   {member.status === "active" ? `${(member.usage / 1000).toFixed(1)}K credits` : member.status}
                 </Badge>
                 {member.role !== "owner" && (
-                  <Button variant="ghost" size="icon" className="h-8 w-8 text-[var(--destructive)] shrink-0">
+                  <Button variant="ghost" size="icon" className="h-8 w-8 text-[var(--destructive)] shrink-0" aria-label={`Remove ${member.name}`}>
                     <X className="w-4 h-4" />
                   </Button>
                 )}

@@ -60,7 +60,7 @@ export default function IntegrationsPage() {
                   {item.connected ? "Disconnect" : "Connect"}
                 </Button>
                 {item.connected && (
-                  <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <Button variant="ghost" size="icon" className="h-8 w-8" aria-label={`Open ${item.name} settings`}>
                     <ExternalLink className="w-4 h-4" />
                   </Button>
                 )}
