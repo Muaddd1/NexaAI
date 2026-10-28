@@ -133,7 +133,7 @@ export default function BillingPage() {
                 <div className="flex items-center gap-4">
                   <span className="text-sm font-medium">{formatCurrency(invoice.amount)}</span>
                   <Badge variant="success" className="text-[10px] h-4">{invoice.status}</Badge>
-                  <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <Button variant="ghost" size="icon" className="h-8 w-8" aria-label="Download invoice">
                     <Download className="w-4 h-4" />
                   </Button>
                 </div>

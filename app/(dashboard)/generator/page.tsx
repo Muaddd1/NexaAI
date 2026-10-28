@@ -199,10 +199,10 @@ export default function GeneratorPage() {
                   <CardTitle className="text-base">Generated Result</CardTitle>
                   {result && (
                     <div className="flex gap-1">
-                      <Button variant="ghost" size="icon" className="h-8 w-8" onClick={handleCopy}>
+                      <Button variant="ghost" size="icon" className="h-8 w-8" aria-label={copied ? "Copied" : "Copy result"} onClick={handleCopy}>
                         {copied ? <Check className="w-4 h-4 text-[var(--success)]" /> : <Copy className="w-4 h-4" />}
                       </Button>
-                      <Button variant="ghost" size="icon" className="h-8 w-8">
+                      <Button variant="ghost" size="icon" className="h-8 w-8" aria-label="Download result">
                         <Download className="w-4 h-4" />
                       </Button>
                     </div>
