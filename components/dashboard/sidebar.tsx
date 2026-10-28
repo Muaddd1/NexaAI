@@ -130,6 +130,7 @@ export function Sidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
           {/* Mobile close */}
           <button
             onClick={onClose}
+            aria-label="Close menu"
             className="lg:hidden p-1 text-[var(--foreground-muted)] hover:text-[var(--foreground)]"
           >
             <X className="w-5 h-5" />
