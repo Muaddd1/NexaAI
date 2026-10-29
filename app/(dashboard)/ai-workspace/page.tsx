@@ -117,7 +117,7 @@ export default function AIWorkspacePage() {
         {/* Chat header */}
         <div className="flex items-center justify-between px-4 py-3 border-b border-[var(--border)] bg-[var(--surface)]">
           <div className="flex items-center gap-3">
-            <Button
+            <Button aria-label="Toggle chat history"
               variant="ghost"
               size="icon"
               className="md:hidden"

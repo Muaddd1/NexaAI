@@ -75,7 +75,7 @@ export default function TemplatesPage() {
                   </div>
                   <div className="flex items-center gap-1">
                     {t.isPopular && <Badge variant="default" className="text-[10px] h-4 px-1.5">Popular</Badge>}
-                    <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => toggleFavorite(t.id)}>
+                    <Button aria-label={favorites.includes(t.id) ? `Remove ${t.name} from favorites` : `Add ${t.name} to favorites`} aria-pressed={favorites.includes(t.id)} variant="ghost" size="icon" className="h-7 w-7" onClick={() => toggleFavorite(t.id)}>
                       <Star className={cn("w-3.5 h-3.5", favorites.includes(t.id) ? "fill-[var(--warning)] text-[var(--warning)]" : "text-[var(--foreground-muted)]")} />
                     </Button>
                   </div>
