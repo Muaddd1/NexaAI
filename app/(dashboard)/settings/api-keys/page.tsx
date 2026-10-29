@@ -84,7 +84,7 @@ export default function ApiKeysPage() {
                   <p className="font-medium text-sm">{key.name}</p>
                   <div className="flex items-center gap-2 mt-1">
                     <code className="text-xs text-[var(--foreground-muted)] bg-[var(--surface-elevated)] px-2 py-1 rounded">
-                      {truncateKey(showKey === key.key ? key.key : key.key)}
+                      {showKey === key.key ? key.key : truncateKey(key.key)}
                     </code>
                     {showKey === key.key && (
                       <Button variant="ghost" size="icon" className="h-6 w-6" onClick={() => setShowKey(null)}>
