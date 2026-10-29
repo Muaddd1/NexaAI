@@ -87,12 +87,12 @@ export default function ApiKeysPage() {
                       {showKey === key.key ? key.key : truncateKey(key.key)}
                     </code>
                     {showKey === key.key && (
-                      <Button variant="ghost" size="icon" className="h-6 w-6" onClick={() => setShowKey(null)}>
+                      <Button aria-label="Hide key" variant="ghost" size="icon" className="h-6 w-6" onClick={() => setShowKey(null)}>
                         <EyeOff className="w-3 h-3" />
                       </Button>
                     )}
                     {showKey !== key.key && (
-                      <Button variant="ghost" size="icon" className="h-6 w-6" onClick={() => setShowKey(key.key)}>
+                      <Button aria-label="Show key" variant="ghost" size="icon" className="h-6 w-6" onClick={() => setShowKey(key.key)}>
                         <Eye className="w-3 h-3" />
                       </Button>
                     )}
@@ -105,7 +105,7 @@ export default function ApiKeysPage() {
                     {key.lastUsed && <span className="text-[10px] text-[var(--foreground-subtle)]">Last used {formatRelativeTime(key.lastUsed)}</span>}
                   </div>
                 </div>
-                <Button variant="ghost" size="sm" className="text-[var(--destructive)]" onClick={() => handleRevoke(key.id)}>
+                <Button aria-label={`Revoke ${key.name}`} variant="ghost" size="sm" className="text-[var(--destructive)]" onClick={() => handleRevoke(key.id)}>
                   <Trash2 className="w-4 h-4" />
                 </Button>
               </div>
