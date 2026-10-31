@@ -91,7 +91,7 @@ export default function AIWorkspacePage() {
         <div className="p-3">
           <div className="relative">
             <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[var(--foreground-muted)]" />
-            <Input placeholder="Search..." className="pl-8 h-8 text-xs" />
+            <Input aria-label="Search conversations" placeholder="Search..." className="pl-8 h-8 text-xs" />
           </div>
         </div>
         <div className="flex-1 overflow-y-auto px-3 pb-3 space-y-1">

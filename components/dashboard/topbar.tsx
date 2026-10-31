@@ -38,7 +38,7 @@ export function Topbar({ onMenuClick }: TopbarProps) {
       <div className="flex-1 max-w-md">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--foreground-muted)]" />
-          <Input
+          <Input aria-label="Search"
             type="search"
             placeholder="Search... (Ctrl+K)"
             value={searchQuery}

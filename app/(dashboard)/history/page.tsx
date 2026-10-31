@@ -46,7 +46,7 @@ export default function HistoryPage() {
       <div className="flex flex-col sm:flex-row gap-3">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--foreground-muted)]" />
-          <Input placeholder="Search history..." value={search} onChange={(e) => setSearch(e.target.value)} className="pl-9" />
+          <Input aria-label="Search history" placeholder="Search history..." value={search} onChange={(e) => setSearch(e.target.value)} className="pl-9" />
         </div>
         <Select value={typeFilter} onValueChange={setTypeFilter}>
           <SelectTrigger className="w-36"><SelectValue placeholder="Type" /></SelectTrigger>
