@@ -119,7 +119,7 @@ export default function TeamPage() {
               <label className="text-sm font-medium">Email address</label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--foreground-muted)]" />
-                <Input
+                <Input aria-label="Invite email"
                   type="email"
                   placeholder="colleague@company.com"
                   value={inviteEmail}

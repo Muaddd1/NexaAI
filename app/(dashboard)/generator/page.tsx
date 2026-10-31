@@ -157,14 +157,14 @@ export default function GeneratorPage() {
                     <Label className="text-xs">{field.label}</Label>
                     {field.type === "text" || field.type === "textarea" ? (
                       field.type === "textarea" ? (
-                        <Textarea
+                        <Textarea aria-label={field.label}
                           placeholder={field.placeholder}
                           value={topic}
                           onChange={(e) => setTopic(e.target.value)}
                           rows={3}
                         />
                       ) : (
-                        <Input
+                        <Input aria-label={field.label}
                           placeholder={field.placeholder}
                           value={topic}
                           onChange={(e) => setTopic(e.target.value)}

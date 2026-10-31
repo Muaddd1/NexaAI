@@ -41,7 +41,7 @@ export function Footer() {
                   setEmail("");
                 }}
               >
-                <Input
+                <Input aria-label="Email for newsletter"
                   type="email"
                   placeholder="your@email.com"
                   value={email}

@@ -62,7 +62,7 @@ export function FinalCTASection() {
               }
             }}
           >
-            <Input
+            <Input aria-label="Work email"
               type="email"
               placeholder="Enter your work email"
               value={email}

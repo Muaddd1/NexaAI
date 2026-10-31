@@ -125,7 +125,7 @@ export default function ApiKeysPage() {
           <div className="space-y-4 mt-4">
             <div className="space-y-1.5">
               <label className="text-sm font-medium">Key name</label>
-              <Input
+              <Input aria-label="API key name"
                 placeholder="e.g. Production API Key"
                 value={newKeyName}
                 onChange={(e) => setNewKeyName(e.target.value)}
